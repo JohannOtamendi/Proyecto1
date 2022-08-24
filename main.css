@@ -3,15 +3,66 @@
     padding: 0;
     border: 0;
 }
-
 body{
-    background-color: cornflowerblue;
+    background-color:azure;
 }
-
-
 .titulo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: medium;
-    color: white;
+    color: black;
     font-size: 50px;
+    margin-top: 30px;
 }
+
+.container{ 
+    background-color: white;
+    width: 500px;
+    margin-left: 500px;
+    height: auto;
+    border-radius: 10px ;
+}
+
+.container > form{
+    width: 100%;
+    height: 100%;
+}
+
+.boton {
+    background-color: steelblue;
+    border-radius: 5px;
+    /* color: white; */
+}
+
+#container-footer{
+    background-color: black;
+    color: white;
+    
+}   
+
+.b-nav{
+    display: flex;
+    border: 2px solid black;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 20px 20px 20px 20px;
+    /* corregir position: fixed; */
+
+}
+.b-nav li{
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.img-container{
+    background-color: grey;
+    width: 400px;
+    height: 250px;
+    
+}
+
+img {width: 100%;
+    height: 80%;
+}
+
+ 
+    

@@ -3,43 +3,83 @@
     padding: 0;
     border: 0;
 }
-body{
-    background-color:azure;
+
+#page-pr{
+    background-color: #F2F0EB;
 }
 .titulo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: medium;
     color: black;
-    font-size: 50px;
-    margin-top: 30px;
+    font-size: 100px;
+    margin: 100px 0 0 50px;
 }
-
+.titulo >p {
+    margin: 0 0 0 30px;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+}
+.two-titles{
+    margin-left: 500px;
+    display: inline;
+}
 .container{ 
     background-color: white;
     width: 500px;
-    margin-left: 500px;
-    height: auto;
+    border: 1px black solid;
+    box-shadow: 0px 48px 100px 0px;
+    margin-left: 700px;
+    margin-top: -150px;
+    height: 300px;
     border-radius: 10px ;
 }
 
 .container > form{
     width: 100%;
     height: 100%;
+    padding: 20px;
 }
 
+.cover-area{
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    min-height: 400px;
+}
+
+.cover-img{
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+.cover-img :nth-child(2){
+    width: 150px;
+    margin-top: -200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
 .boton {
     background-color: steelblue;
     border-radius: 5px;
     /* color: white; */
 }
-
+.container-item{
+   /* margin: 0 0 0 512px; */
+   display: flex;
+   justify-content: space-between;
+   max-height: 700px;
+   /* display: flex;
+   flex-direction: column; */
+}
 #container-footer{
     background-color: black;
-    color: white;
-    
+    color: white;    
 }   
-
+h2{
+    flex: none;
+}
 .b-nav{
+    /* position: fixed; */
+    background-color: #38677D;
     display: flex;
     border: 2px solid black;
     list-style: none;
@@ -47,22 +87,126 @@ body{
     gap: 30px;
     padding: 20px 20px 20px 20px;
     /* corregir position: fixed; */
-
 }
-.b-nav li{
-    background-color: aquamarine;
-    border-radius: 10px;
+.b-nav :nth-child(1){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-right: 800px;
+}
+.b-nav :nth-child(2){
+    background-color: white;
+    color: black;
+    padding:10px;
+    border-radius:10px;
+}
+.b-navpr{
+    background-color: #38677D;
+    display: flex;
+    border: 2px solid black;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 20px 20px 20px 20px;
 }
 .img-container{
-    background-color: grey;
+    background-color: white; 
+    border: 1px solid black;
+    border-radius: 5px;
     width: 400px;
-    height: 250px;
-    
-}
+    padding: 10px;
+    height: auto;  
+    margin: 0 0 20px 450px;
 
+}
 img {width: 100%;
-    height: 80%;
+    height: 100%;
 }
 
- 
+.two-titles{
+    margin-left: 1000px;
+}
+.what-think{
+    display: flex;
+    align-content: flex-start;
+    width: 400px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 20px;
+    margin: 0 0 20px 450px;
+    padding: 20px;
+}
+.what-think img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.friends-nav{
+    width: 300px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 30px;
+    height: 100px;
+    box-shadow: rgba(17, 42, 16, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 10px;
+}
+.pr-fr{
+    display: flex;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+
+}
+.pr-fr :nth-child(1){
+    background-color: white;
+    flex: 1;
     
+}
+.secondpr-fr{
+    background-color: gray;
+    flex: 2;
+}
+
+@media screen and (max-width: 320px){
+    .titulo{
+        margin: 0 0 0 40px;
+    }
+    .container{
+        margin-left: 500px;
+    }
+    .b-navpr{
+        width: 775px;
+    }
+}
+/* @media screen and (max-width: 375px){
+    
+}
+@media screen and (max-width: 425px){
+    .titulo{
+        margin: 10px 0 0 10px;
+    }
+}
+@media screen and (max-width: 897px){
+    .titulo{
+        margin-left: 70px;
+        margin-top: 10px;
+        font-size: 70px ;
+    }
+    .container{
+        margin-top: -20px;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1024px){
+    
+    .container{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+    section div form {
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+}  */
